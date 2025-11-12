@@ -46,3 +46,6 @@ ecosystem.config.js
 
 # idk
 core
+
+# startup script
+start.sh
