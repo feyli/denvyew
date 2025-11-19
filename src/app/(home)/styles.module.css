@@ -1,0 +1,6 @@
+.conicBg {
+    background-size: 100% 100%;
+    background-position: 33% 119%, 97% 1%, 106% 87%, 12% 80%, 24% 26%;
+    background-image: radial-gradient(calc(75% * var(--multiplier)) calc(75% * var(--multiplier)) at 33% 119%, var(--color1) 0%, #FFFFFF00 100%), radial-gradient(calc(75% * var(--multiplier)) calc(75% * var(--multiplier)) at 97% 1%, var(--color2) 2%, #FFFFFF00 100%), radial-gradient(calc(75% * var(--multiplier)) calc(75% * var(--multiplier)) at 106% 87%, var(--color3) 0%, #FFFFFF00 100%), radial-gradient(calc(75% * var(--multiplier)) calc(75% * var(--multiplier)) at 12% 80%, var(--color4) 0%, #FFFFFF00 100%), radial-gradient(calc(75% * var(--multiplier)) calc(75% * var(--multiplier)) at 24% 26%, var(--color5) 0%, #FFFFFF00 100%);
+    animation: increaseMultiplier 2s cubic-bezier(.13, .69, .33, .99) forwards, colorCycle 30s linear infinite;
+}
