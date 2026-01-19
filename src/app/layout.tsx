@@ -1,4 +1,3 @@
-import '@ant-design/v5-patch-for-react-19'; // Patch for Ant Design compatibility with React 19
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -32,7 +31,7 @@ export default function RootLayout({
         >
             <div className="flex flex-col h-dvh bg-zinc-50 font-sans dark:bg-black p-3">
                 <NavigationBar/>
-                <div className="flex flex-col min-h-full items-center justify-center">
+                <div className="flex flex-col flex-1 items-center justify-center">
                     {children}
                 </div>
             </div>
