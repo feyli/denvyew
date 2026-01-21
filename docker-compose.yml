@@ -3,11 +3,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: release
+      target: runner
     container_name: denvyew-app
     restart: always
     ports:
-      - "50013:3000" # Maps host port 50013 to container port 3000
+      - "${PORT:-3000}:3000" # Maps host port 50013 to container port 3000
     environment:
       - NODE_ENV=production
       - PORT=3000
