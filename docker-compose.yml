@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
       target: runner
-    image: denvyew
+    image: denvyew-web
     container_name: denvyew-app
     restart: always
     ports:
